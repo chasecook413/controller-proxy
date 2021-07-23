@@ -14,7 +14,8 @@ const logger = winston.createLogger({
     ],
 });
 
-const ws = new WebSocket('ws://192.168.1.67:8080');
+PC_IP=process.env.PC_IP;
+const ws = new WebSocket(`ws://${PC_IP}:8080`);
 
 function onButton(button) {
     // logger.info(`Received button: ${util.inspect(button)}`);
