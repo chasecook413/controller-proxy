@@ -13,12 +13,12 @@ The PC and Pi must be on the same LAN, and you should take note of the local IP 
 
 ### Setup/Running:
 
-On your PC:
+On your PC `/server`:
 
     npm install
     node server/wss-server.js
 
-On your Pi:
+On your Pi `/client`:
 
     npm install
     PC_IP=<serverpc> node client/wss-client.js
